@@ -1,0 +1,467 @@
+<!-- Pedro Anotonio Cevallos Ortiz /   6to semestre -->
+<!DOCTYPE html>
+<html lang="es"> <!-- Definición del idioma del documento como español -->
+   <head>
+      <!-- Meta básicas -->
+      <meta charset="utf-8"> <!-- Codificación de caracteres UTF-8 -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Configuración para compatibilidad con Internet Explorer -->
+      <!-- Metas móviles -->
+      <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Configuración para dispositivos móviles -->
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1"> <!-- Limitación de escala máxima en dispositivos móviles -->
+      
+      <!-- Metas del sitio -->
+      <title>Pedro Cevallos</title> <!-- Título del sitio web -->
+      <meta name="keywords" content=""> <!-- Palabras clave para SEO -->
+      <meta name="description" content=""> <!-- Descripción del sitio para SEO -->
+      <meta name="author" content=""> <!-- Autor del sitio -->
+      <!-- CSS de Bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Hoja de estilos de Bootstrap -->
+      <!-- Estilo personalizado -->
+      <link rel="stylesheet" href="css/style.css"> <!-- Hoja de estilos personalizada -->
+      <!-- Estilos responsivos -->
+      <link rel="stylesheet" href="css/responsive.css"> <!-- Hoja de estilos responsiva -->
+      <!-- Favicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" /> <!-- Ícono del sitio -->
+      <!-- CSS personalizado del scrollbar -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css"> <!-- Hoja de estilos para scrollbar personalizado -->
+      <!-- Font Awesome para iconos -->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"> <!-- Iconos de Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen"> <!-- Estilos para Fancybox -->
+      <!-- Compatibilidad con IE -->
+      <!--[if lt IE 9]> <!-Compatibilidad para versiones antiguas de Internet Explorer -->
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script> <!-- Polyfill para HTML5 en IE -->
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <!-- Polyfill para respond.js en IE -->
+      <!--[endif]-->
+   </head>
+   <!-- Cuerpo del documento -->
+   <body class="main-layout">
+      <!-- Loader -->
+      <div class="loader_bg"> <!-- Contenedor del loader -->
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div> <!-- Imagen de carga -->
+      </div>
+      <!-- Fin del loader -->
+      <!-- Panel lateral -->
+      <div id="mySidepanel" class="sidepanel"> <!-- Panel lateral -->
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> <!-- Botón para cerrar el panel -->
+         <a href="#about">Acerca</a> <!-- Enlace a la sección Acerca -->
+         <a href="#service">Servicios</a> <!-- Enlace a la sección Servicios -->
+         <a href="#vehicles">Vehículos</a> <!-- Enlace a la sección Vehículos -->
+         <a href="#testimonial">Testimonio</a> <!-- Enlace a la sección Testimonio -->
+         <a href="#contact">Contacto</a> <!-- Enlace a la sección Contacto -->
+      </div>
+      <!-- Encabezado -->
+      <header> <!-- Encabezado de la página -->
+         <!-- Contenedor del encabezado -->
+         <div class="header"> <!-- Contenedor principal del encabezado -->
+            <div class="container-fluid"> <!-- Contenedor fluido para el encabezado -->
+               <div class="row"> <!-- Fila del encabezado -->
+                  <div class="col-md-4 col-sm-4"> <!-- Columna de logo -->
+                     <div class="logo"> <!-- Contenedor del logo -->
+                        <a href="index.html"> <!-- Enlace al inicio -->
+                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ffZmujq70REzu9W-r-HIfDTFbovqgIXyug&s" alt="#" /></a> <!-- Imagen del logo -->
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-sm-8"> <!-- Columna de botones -->
+                     <div class="right_bottun"> <!-- Contenedor de botones -->
+                        <ul class="conat_info d_none "> <!-- Lista de información de contacto -->
+                           <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li> <!-- Ícono de usuario -->
+                           <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li> <!-- Ícono de búsqueda -->
+                        </ul>
+                        <button class="openbtn" onclick="openNav()"> <!-- Botón para abrir el panel -->
+                           <img src="images/menu_icon.png" alt="#" /> </button> <!-- Imagen del botón de menú -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- Fin del encabezado -->
+      <!-- Sección del banner -->
+      <section class="banner_main"><!-- Sección principal del banner -->
+         <div id="banner1" class="carousel slide banner_slide" data-ride="carousel"><!-- Carrusel -->
+            <!-- Indicadores del carrusel -->
+            <ol class="carousel-indicators"><!-- Lista de indicadores del carrusel -->
+               <li data-target="#banner1" data-slide-to="0" class="active"></li> <!-- Indicador activo -->
+               <li data-target="#banner1" data-slide-to="1"></li><!-- Otro indicador -->
+               <li data-target="#banner1" data-slide-to="2"></li><!-- Otro indicador -->
+            </ol>
+            <!-- Contenido del carrusel -->
+            <div class="carousel-inner"><!-- Contenido del carrusel -->
+               <div class="carousel-item active"><!-- Elemento del carrusel activo -->
+                  <div class="container-fluid"><!-- Contenedor fluido -->
+                     <div class="carousel-caption"><!-- Leyenda del carrusel -->
+                        <div class="row"><!-- Fila del contenido -->
+                           <div class="col-md-7 col-lg-5"><!-- Columna de texto -->
+                              <div class="text-bg"><!-- Fondo del texto -->
+                                 <h1> Compañia Logistica Cevallos Lucas  </h1><!-- Título -->
+                                 <span>El camino al éxito está marcado por una logística impecable y un transporte eficiente. </span>
+                                 <a class="read_more" href="#contact">Contactanos</a><!-- Enlace para contactar -->
+                              </div>
+                           </div>
+
+                           
+                           <div class="col-md-12 col-lg-7"> <!-- Columna de imagen y formulario -->
+                              <div class="row"><!-- Fila interna -->
+                                 <div class="col-md-6"><!-- Columna de imagen -->
+                                    <div class="ban_track"><!-- Elemento de seguimiento -->
+                                       <figure><img src="images/track.png" alt="#"/></figure><!-- Imagen -->
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6"><!-- Columna de formulario -->
+                                    <form class="transfot"><!-- Formulario de transporte -->
+                                       <!-- Campos del formulario -->
+                                       <!-- Se omite la descripción de los campos por brevedad -->
+                                       <div class="col-md-12">
+                                          <span>Servicios profesionales</span>
+                                          <h3>Obtenga su cotización de transporte</h3>
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Ubicación" type="text" name="Ubicación">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Destino" type="text" name="Destino">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Email" type="text" name="Email">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Número de contacto" type="text" name="Número de contacto">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <button class="get_now">Obtener cotización ahora</button>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Otros items del carrusel se omiten por brevedad -->
+            </div>
+            <!-- Controles del carrusel -->
+            <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev"> <!-- Control para retroceder -->
+            <i class="fa fa-angle-left" aria-hidden="true"></i><!-- Icono de flecha izquierda -->
+            </a>
+            <a class="carousel-control-next" href="#banner1" role="button" data-slide="next"><!-- Control para avanzar -->
+            <i class="fa fa-angle-right" aria-hidden="true"></i><!-- Icono de flecha derecha -->
+         </a>
+      </div>
+            </a>
+         </div>
+      </section>
+      <!-- Fin de la sección del banner -->
+      <!-- Sección "About Us" -->
+      <div id="about" class="about"><!-- Sección de "Sobre Nosotros" -->
+         <div class="container"><!-- Contenedor -->
+            <div class="row d_flex"><!-- Fila flexible -->
+               <div class="col-md-6"><!-- Columna de imagen -->
+                  <div class="about_right"><!-- Elemento derecho -->
+                     <figure><img src="images/about.png" alt="#"/></figure><!-- Imagen -->
+                  </div>
+               </div>
+               <div class="col-md-6"><!-- Columna de texto -->
+                  <div class="titlepage"><!-- Título de la página -->
+                     <h2>Sobre nosotros </h2><!-- Título -->
+                     <p> Somos conscientes de que los transitarios globales operan en diversas regiones, cada una con sus propios requisitos. Logistaas soporta las necesidades de localización sin problemas dentro de su sistema de gestión de transporte, incluyendo idiomas de interfaz del sistema, plantillas de documentos personalizables, configuraciones de impuestos e integraciones con aduanas locales, puertos/aeropuertos y autoridades fiscales. No importa dónde estén sus oficinas, Logistaas se adapta.
+                     </p>
+                     <a class="read_more" href="#">Leer más</a><!-- Enlace para leer más -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Fin de la sección "About Us" -->
+      <!-- Sección de servicios -->
+      <div id="service" class="service"><!-- Sección de servicios -->
+         <div class="container"> <!-- Contenedor -->
+            <div class="row"><!-- Fila -->
+               <div class="col-md-10 offset-md-1"><!-- Columna -->
+                  <div class="titlepage"><!-- Título de la página -->
+                     <h2> Nuestros Servicios</h2><!-- Título -->
+                     <p>
+                        "Contamos con una flota moderna y diversa que garantiza el transporte seguro y eficiente de cualquier tipo de carga. Cada vehículo está equipado con tecnología de rastreo en tiempo real, asegurando la visibilidad y seguridad de su mercancía en todo momento."<!-- Descripción -->
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row"><!-- Otra fila -->
+               <div class="col-md-12"><!-- Columna -->
+                  <div class="service_main"><!-- Elemento principal de servicios -->
+                      <!--  descripción de los servicios -->
+                     <div class="service_box blu_colo">
+                        <i><img src="images/ser1.png" alt="#">
+                        </i>
+                        <h4>VUELA A CUALQUIER LUGAR</h4>
+                     </div>
+                     <div class="service_box yelldark_colo">
+                        <i><img src="images/ser2.png" alt="#"></i>
+                        <h4>Servicio de carga</h4>
+                     </div>
+                     <div class="service_box yell_colo">
+                        <i><img src="images/ser3.png" alt="#"></i>
+                        <h4> SERVICIOS DE MENSAJERÍA</h4>
+                     </div>
+                     <div class="service_box yelldark_colo">
+                        <i><img src="images/ser4.png" alt="#"></i>
+                        <h4>NUESTROS SERVICIOS</h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Fin de la sección de servicios -->
+      <!-- Sección de vehículos -->
+      <div id="vehicles" class="vehicles"><!-- Sección principal para los vehículos -->
+         <div class="container"><!-- Contenedor principal para ajustar el contenido -->
+            <div class="row d_flex"><!-- Fila con flexbox para alineación flexible -->
+               <div class="col-md-6"><!-- Columna que ocupa la mitad del ancho en dispositivos medianos y grandes -->
+                  <div class="titlepage"><!-- Contenedor del título y descripción -->
+                     <h2>Nuestros vehículos</h2><!-- Título de la sección -->
+                     <p>
+                        "Contamos con una flota moderna y diversa que garantiza el transporte seguro y eficiente de cualquier tipo de carga. Cada vehículo está equipado con tecnología de rastreo en tiempo real, asegurando la visibilidad y seguridad de su mercancía en todo momento."
+                     </p><!-- Descripción de la sección -->
+                     <a class="read_more" href="#">Leer más <!-- Enlace para leer más información -->
+                     </a>
+                  </div>
+               </div>
+               <div class="col-md-6"><!-- Otra columna que ocupa la mitad del ancho en dispositivos medianos y grandes -->
+                  <div class="vehicles_img"><!-- Contenedor para la imagen del vehículo -->
+                     <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd0_S33LheZvJSHa174Pq0lnul6UtYzE_Prg&s" /></figure><!-- Imagen del vehículo -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Fin de la sección de vehículos -->
+      <!-- Sección de testimonios -->
+      <div id="testimonial" class="testimonial">
+          <!-- Contenedor principal de la sección -->
+         <div class="container">
+            <!-- Fila para alinear los elementos dentro del contenedor -->
+            <div class="row d_flex">
+                <!-- Columna que ocupa 10 partes del ancho y está desplazada al centro -->
+               <div class="col-md-10 offset-md-1">
+                  <!-- Título y contenido de la sección de testimonios -->
+                  <div class="titlepage">
+                      <!-- Título de la sección -->
+                     <h2>Testimonios</h2>
+                     <!-- Párrafo con el testimonio del cliente -->
+                     <p>
+                        "Lo que dicen nuestros clientes sobre nosotros .
+                        Trabajar con Cevallos Lucas ha sido una experiencia altamente positiva. Su capacidad de adaptación a nuestras necesidades específicas y su enfoque en la innovación tecnológica nos han ayudado a optimizar nuestras operaciones y a mantener la excelencia en el servicio que ofrecemos a nuestros clientes"
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <!-- Contenedor principal -->
+            <div id="testimon" class="carousel slide testimonial_Carousel " data-ride="carousel">
+                <!-- Elemento de carrusel con ID y clases, indicando que es un carrusel que se desliza automáticamente -->
+               <ol class="carousel-indicators">
+                   <!-- Indicadores del carrusel -->
+                  <li data-target="#testimon" data-slide-to="0" class="active">
+                     <!-- Indicador del primer slide, con la clase 'active' para mostrar que es el slide activo -->
+                  </li>
+                  <li data-target="#testimon" data-slide-to="1"></li>
+                   <!-- Indicador del segundo slide -->
+                  <li data-target="#testimon" data-slide-to="2"></li>
+                   <!-- Indicador del tercer slide -->
+               </ol>
+               <div class="carousel-inner">
+                   <!-- Contenedor para los elementos del carrusel -->
+                  <div class="carousel-item active">
+                     <!-- Primer elemento del carrusel, con clase 'active' para mostrar que es el slide activo -->
+                     <div class="container">
+                         <!-- Contenedor del contenido del slide -->
+                        <div class="carousel-caption ">
+                            <!-- Contenedor para las leyendas del carrusel -->
+                           <div class="row d_flex">
+                              <!-- Fila que utiliza la clase d_flex para alinear los elementos -->
+                              <div class="col-md-12">
+                                 <!-- Columna que ocupa todo el ancho en dispositivos medianos hacia arriba -->
+                                 <div class="testomonial">
+                                      <!-- Contenedor del testimonio -->
+                                    <i>
+                                       <img src="data:image/jpeg;base64,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" alt="#">
+                                    </i>
+                                    <h3> Moreira Wiliam </h3>
+                                    <p>
+                                       "Como empresa de importación y exportación, la eficiencia y la confiabilidad en la logística son fundamentales para nuestro negocio. Desde que comenzamos a trabajar con Cevallos Lucas, hemos experimentado un servicio excepcional que ha superado nuestras expectativas.
+                                             Una de las razones por las que elegimos a Cevallos Lucas es su impresionante flota de vehículos. Sus camiones y equipos de transporte son modernos, bien mantenidos y cuentan con tecnología de seguimiento en tiempo real que nos brinda visibilidad sobre el estado de nuestras mercancías en todo momento. "
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     
+                  <!-- Otros items del carrusel se omiten por brevedad -->
+               </div>
+               <!-- Enlace para controlar el carrusel, desplazándose al item anterior -->
+               <a class="carousel-control-prev" href="#testimonio" role="button" data-slide="net">
+                   <!-- Icono de flecha hacia la izquierda -->
+               <i class="fa fa-angle-left" aria-hidden="true">
+               </i>
+               </a>
+               <a class="carousel-control-next" href="#testimon" role="button" data-slide="next"><!-- Enlace para controlar el carrusel, desplazándose al item siguiente -->
+                  <!-- Icono de flecha hacia la derecha -->
+                  <i class="fa fa-angle-right" aria-hidden="true">
+                  </i>
+                  </a>
+            </div>
+         </div>
+      </div>
+       <!-- Fin de la sección de testimonios -->
+      <!-- Sección de contacto -->
+      <div id="contact" class="contact">
+         <div class="container-fluid">
+            <div class="row">
+          <!-- Columna para el formulario de contacto -->
+               <div class="col-md-9">
+                    <!-- Título de la página de contacto -->
+                  <div class="titlepage">
+                     <h2>Contacto</h2>
+                     <p>Nuestros expertos están disponibles para ayudarte. Contacta con nosotros y encontraremos la solución que necesitas. </p>
+                  </div>
+                   <!-- Contenedor del formulario de contacto -->
+                  <div class="cont">
+                     <form>
+                        <div class="row">
+                             <!-- Campo de entrada para el nombre del usuario -->
+                           <div class="col-md-12">
+                              <input class="transfot_form" placeholder="Su nombre" type="text" name="Su nombre">
+                           </div>
+                            <!-- Campo de entrada para el email del usuario -->
+                           <div class="col-md-12">
+                              <input class="transfot_form" placeholder="Email" type="text" name="Email">
+                           </div>
+                           <div class="col-md-12">
+                              <input class="transfot_form" placeholder="Número de teléfono" type="text" name="Número de teléfono">
+                           </div>
+                           <!-- Campo de entrada para el número de teléfono del usuario -->
+                           <div class="col-md-12">
+                              <textarea class="textarea" placeholder="Mensaje" type="text" name="Mensaje"></textarea>
+                           </div>
+                           <!-- Botón para enviar el formulario -->
+                           <div class="col-md-12">
+                              <button class="get_now"> Enviar ahora</button>
+                              
+                              <!-- Mapa de Google integrado -->
+                              <div class="col-md-6 padding_left0">
+                                 <div class="map_main">
+                                    <div class="map-responsive">
+                                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.8878308617087!2d90.38442661539704!3d23.777412093559795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7aa7a57cd05%3A0xc956b9b5b6930c2c!2sIBM!5e0!3m2!1sen!2sbd!4v1444321296006" width="600" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                 </div>
+                             </div> <!-- Fin del contenedor del mapa -->
+                         </div> <!-- Fin de la columna del botón y mapa -->
+                     </div> <!-- Fin de la fila del formulario -->
+                 </form> <!-- Fin del formulario -->
+             </div> <!-- Fin del contenedor del formulario -->
+         </div> <!-- Fin de la columna del formulario -->
+     </div> <!-- Fin de la fila del formulario -->
+ </div> <!-- Fin del contenedor del formulario -->
+</div> <!-- Fin de la sección de contacto -->
+
+      <!-- Fin de la sección de contacto -->
+      <!-- Footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                <!-- Columna para el contacto en el footer -->
+
+                  <div class="col-md-6">
+                     <div class="cont">
+                        <h3>conctatanos</h3>
+                        <!-- Lista de ubicaciones -->
+                        <div class="address">
+                           <ul class="loca">
+                                 <!-- Elemento de lista para ubicación con icono -->
+                              <li>
+                                 <a href="#">
+                                    <img src="data:image/png;base64,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" alt="#" /></a>Ubicaciones
+                              </li>
+                              <li>
+                                 <a href="#"><img src="data:image/png;base64,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" alt="#" /></a>+71 9087654321
+                              </li>
+                              <li>
+                                 <a href="#"><img src="data:image/png;base64,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" alt="#" /></a>Logiceva@gmail.com
+                              </li>
+                           
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+
+                        </ul>
+                        <ul class="contant_icon">
+                           <li>
+                              
+                         
+                        </ul>
+                        <p>
+                           © 2024 Reservados todos los derechos. Diseño mediante plantillas HTML gratuitas <a href="P.C">Pedro.C</a>
+                        </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Fin del footer -->
+      <!-- JS de jQuery -->
+        <!-- jQuery es una biblioteca de JavaScript que facilita la manipulación del DOM, eventos, animaciones y AJAX -->
+      <script src="js/jquery.min.js"></script>
+      <!-- Popper.js es una biblioteca que se utiliza para manejar los popovers, tooltips y otros elementos de superposición -->
+      <script src="js/popper.min.js"></script>
+      <!-- Bootstrap es un framework CSS y JavaScript para diseño responsivo. bootstrap.bundle.min.js incluye Popper.js -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- Otra versión de jQuery, aunque tener dos versiones podría causar conflictos, es mejor asegurarse de que sólo una se use -->
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- plugin.js se utiliza para cargar scripts personalizados y plugins adicionales -->
+      <script src="js/plugin.js"></script>
+      <!-- custom.js contiene scripts personalizados específicos para este proyecto -->
+      <!-- JS personalizado -->
+      <script src="js/custom.js"></script>
+      <!-- jQuery.mCustomScrollbar es un plugin para personalizar las barras de desplazamiento -->
+      <!-- JS del scrollbar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <!-- jQuery.fancybox es un plugin para crear ventanas modales y galerías de imágenes -->
+      <script src="js/jquery.fancybox.min.js"></script>
+      <!-- Sweetalert es una biblioteca para mostrar alertas bonitas y personalizables -->
+      <!-- Sweetalert JS -->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
+<script>
+
+// Función para abrir el panel lateral estableciendo su ancho a 250px
+   function openNav() {
+       document.getElementById("mySidepanel").style.width = "250px";
+   }
+   // Función para cerrar el panel lateral estableciendo su ancho a 0
+   function closeNav() {
+       document.getElementById("mySidepanel").style.width = "0";
+
+
+
+       function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+}
+   }
+</script>
+</body>
+</html> 
+  <!-- Fin del cuerpo del documento HTML -->
+  
+  
